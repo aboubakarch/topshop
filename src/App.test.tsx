@@ -1,9 +1,16 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { screen } from '@testing-library/react';
+import Home from './pages/Home';
+import { renderWithProviders } from './utils/test-utils';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('all element rendering', () => {
+  test('render show more', () => {
+    renderWithProviders(<Home />);
+    const linkElement = screen.getByText(/\+ Show More/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+  test('renders search input', () => {
+    renderWithProviders(<Home />);
+    const linkElement = screen.getByTestId('search-input');
+    expect(linkElement).toBeInTheDocument();
+  });
 });
