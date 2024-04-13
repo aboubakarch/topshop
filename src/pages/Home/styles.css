@@ -1,0 +1,20 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row button {
+  width: auto;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid #ffce00;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background: #e2b70a;
+}

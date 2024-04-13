@@ -1,0 +1,93 @@
+.w-19\% {
+  width: 19% !important;
+}
+
+.filter-container {
+  margin: 70px 0px;
+  display: flex;
+  border: 1.5px solid #ffce00;
+  border-radius: 15px;
+  width: fit-content;
+  overflow-y: hidden;
+}
+
+.container-width {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.filter-item {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0px 25px;
+  border-left: 1.5px solid #ffce00;
+}
+
+.filter-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #7b7474;
+}
+
+.filter-container .filter-item:first-child {
+  border-left: none !important;
+}
+
+.filter-item:hover {
+  background: #ecbf0a;
+}
+
+.filter-item-active {
+  background: #ffce00;
+}
+.filter-item-active p {
+  color: #313030 !important;
+}
+
+@media screen and (max-width: 645px) {
+  .container-width {
+    width: 70%;
+  }
+
+  .filter-item {
+    padding: 0px 19px;
+  }
+
+  .filter-item p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .filter-item {
+    padding: 0px 17px;
+  }
+
+  .filter-item p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .container-width {
+    width: 100%;
+  }
+
+  .filter-item {
+    padding: 0px 12px;
+  }
+
+  .filter-item p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .filter-item {
+    padding: 0px 9px;
+  }
+
+  .filter-item p {
+    font-size: 11px;
+  }
+}
